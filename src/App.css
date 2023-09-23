@@ -167,7 +167,7 @@
   }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (min-width:481px) and (max-width:767px) {
   .container {
     width: 80%;
     height: 650px;

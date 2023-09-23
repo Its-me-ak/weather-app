@@ -17,7 +17,7 @@ import SunriseIcon from '../components/assets/sunrise.png';
 const WeatherApp = () => {
 
   let apiKey = "030334adc5c00b0bea8ef5166e250fc9";
-  const [wicon, setWicon] = useState(CloudeIcon);
+  const [wicon, setWicon] = useState(ClearIcon);
 
   const search = async () => {
     const element = document.getElementsByClassName("city-input");
@@ -43,7 +43,7 @@ const WeatherApp = () => {
     wind[0].innerHTML = data.wind.speed + " km/h";
     temprature[0].innerHTML = Math.round(data.main.temp) + "°c";
     weatherFeel[0].innerHTML = Math.round(data.main.feels_like) + "°c";
-    weatherName[0].innerHTML = data.weather[0].main
+    weatherName[0].innerHTML = data.weather[0].description
     location[0].innerHTML = data.name;
     sunrise[0].innerHTML = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
     sunset[0].innerHTML = new Date(data.sys.sunset * 1000).toLocaleTimeString();
