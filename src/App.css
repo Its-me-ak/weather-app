@@ -4,11 +4,20 @@
   box-sizing: border-box;
 }
 
+.App{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(#00000099, rgba(0,0,0,0.6)), url('../public/img/pexels-tyler-lastovich-772803.webp');
+  padding-top: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .container {
   width: 380px;
   height: 575px;
   margin: auto;
-  margin-top: 40px;
   border-radius: 10px;
   background-image: linear-gradient(180deg, #ea6fea 0%, #9c65f5 100%);
 }
